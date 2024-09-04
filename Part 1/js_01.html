@@ -4,7 +4,11 @@
 <button class="btn btn-primary"  id="btn1_1" >คลิกที่นี่ JS1.1</button>
 
 <!-- Coding JavaScript 1.1 here!!!! -->
-
+<script>
+    document.getElementById("btn1_1").addEventListener("click", function () {
+            alert("My name is 'Net'")
+    })
+</script>
 
 
 <!-- Coding JavaScript 1.1 here!!!! -->
@@ -16,7 +20,16 @@
 
 <button class="btn btn-primary"  id="btn1_2"  >คลิกที่นี่ JS1.2</button>
 <!-- Coding JavaScript 1.2 here!!!! -->
-
+<script>
+    document.getElementById("btn1_2").addEventListener("click", function () {
+        const text = prompt("Please enter your word");
+        if(text.length <= 0){
+            alert("Please enter your word");
+        }else{
+            alert(`จำนวน Character ของ ${text} = ${text.length}`);
+        }
+    })
+</script>
 
 
 <!-- Coding JavaScript 1.2 here!!!! -->
